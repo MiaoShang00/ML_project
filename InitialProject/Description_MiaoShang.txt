@@ -1,0 +1,34 @@
+1. Classification_MiaoShang_LightGBM.txt:
+  Algorithm: LightGBM
+  Key HP values: num_leaves=6, num_boost_round=1000 
+  HP optimisation: Tried different features
+  Parameters in model: Time used by LightGBM: 1180.4 ms
+  Valid_0's binary_logloss: 0.247706, AUC=0.931
+  Own evaluation: Well performing model
+
+2. Classification_MiaoShang_NeuralNetwork.txx:
+  Algorithm: MLPClassifier
+  Key HP values: hidden_layer_sizes=(20, 20),learning_rate='invscaling'
+  HP optimisation: Tried different hidden_layer_sizes
+  Parameters in model: Time used by MLPClassifier: 45126.3 ms
+  AUC=0.917 
+  Own evaluation:Reasonably good model
+
+3. Regression_MiaoShang_LinearRegression.txt:
+  Algorithm: MLPClassifier
+  Mean Absolute Error (MAE): 0.07277070862355514
+  Own evaluation: Meet basic requirements
+ 
+4. Regression_MiaoShang_RandomForestRegressor.txt
+  Algorithm: RandomForestRegressor
+  Mean Absolute Error (MAE): 0.0770308991963645
+  Own evaluation: Fair model
+
+5. Regression_MiaoShang_NeuralNeiwork.txt
+  Algorithm: MLPRegressor
+  Mean Absolute Error (MAE): 0.07381767364108313
+  Own evaluation: Good model
+
+6. Clustering_MiaoShang_Kmeans.txt
+  Algorithm: KMeans
+  Own evaluation: Model works basiclly, need to improve further
